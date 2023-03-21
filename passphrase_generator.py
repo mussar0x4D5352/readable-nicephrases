@@ -1,10 +1,10 @@
-import niceware
+from niceware import wordlist
 import nltk
 import secrets
+
 # nltk.download('averaged_perceptron_tagger') # uncomment this if the nltk.pos_tag(phrases) throws an error
 
-phrases = niceware.generate_passphrase(1024)
-tagged_phrases = nltk.pos_tag(phrases)
+tagged_phrases = nltk.pos_tag(wordlist.WORD_LIST)
 nouns = []
 adjectives = []
 adverbs = []
@@ -44,3 +44,4 @@ for character in structure:
 passphrase = '{0} {1} {2}'.format(tokens[0], tokens[1], tokens[2])
 
 print(passphrase)
+
