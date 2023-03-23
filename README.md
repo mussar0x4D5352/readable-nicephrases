@@ -1,5 +1,5 @@
 # readable-nicephrases
-niceware passphrases made into english sentences
+niceware passphrases made into english sentences (with a dash of ML)
 
 This notebook is my attempt to build a passphrase generator to assist people in creating more secure yet memorable passwords, inspired by the following xkcd comic: https://xkcd.com/936/
 
